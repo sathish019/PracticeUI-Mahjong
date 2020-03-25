@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #f3f3f4;
+}
+
+.dp-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+  border: 2px solid black;
+  padding: 6px;
+  cursor: pointer;
+} 
+
+
+
