@@ -65,13 +65,15 @@ class GameController {
           let secondClickValue = self.modal.getSecondClickValue();
 
           if (clickCount == 1) {
-            firstClickValue = event.target.firstElementChild.textContent;
+            //firstClickValue = event.target.firstElementChild.textContent;
+            firstClickValue = event.target.firstElementChild.getAttribute("data");
             self.modal.setFirstClickValue(firstClickValue);
 
             firstClickedElement = event.target.firstElementChild;
             self.modal.setFirstClickedElement(firstClickedElement);
           } else if (clickCount == 2) {
-            secondClickValue = event.target.firstElementChild.textContent;
+            //secondClickValue = event.target.firstElementChild.textContent;
+            secondClickValue = event.target.firstElementChild.getAttribute("data");
             self.modal.setSecondClickValue(secondClickValue);
           }
 
